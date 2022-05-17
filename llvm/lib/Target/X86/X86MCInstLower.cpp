@@ -1877,7 +1877,7 @@ static std::string getShuffleComment(const MachineInstr *MI, unsigned SrcOp1Idx,
       CS << " {%" << GetRegisterName(WriteMaskOp.getReg()) << "}";
 
       if (SrcOp1Idx == 2) {
-        CS << " {z}";
+        CS << "{z}";
       }
     }
   }

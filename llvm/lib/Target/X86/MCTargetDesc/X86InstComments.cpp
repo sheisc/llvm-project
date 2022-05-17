@@ -278,7 +278,7 @@ static void printMasking(raw_ostream &OS, const MCInst *MI,
 
   // MASKZ: zmmX {%kY} {z}
   if (MaskWithZero)
-    OS << " {z}";
+    OS << "{z}";
 }
 
 static bool printFMAComments(const MCInst *MI, raw_ostream &OS,
